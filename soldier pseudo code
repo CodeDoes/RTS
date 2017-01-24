@@ -1,0 +1,20 @@
+
+if attacking animation
+    if animation complete
+        if enemy exists
+            send enemy damage 
+        if path or not enemy exists
+            animation play idle
+        else
+            animation frame 0
+            animation play
+else
+    update path timer
+    if path timer valid
+        update path 
+    shorten path
+    move to next path point
+    if moving 
+        animation play move 
+    else
+        animation play idle
